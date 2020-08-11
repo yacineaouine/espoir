@@ -1,0 +1,126 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#l1 {
+    color: #4285f4;
+    font-size: 4em;
+}
+
+#l2, #l6 {
+    color: #ea4335;
+    font-size: 3em;
+}
+
+#l3{
+    color: #fbbc05;
+    font-size: 3em;
+}
+
+#l4{
+    color: #4285f4;
+    font-size: 3em;
+}
+
+#l5{
+    color: #34a853;
+    font-size: 3em;
+}
+.box-form {
+   
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+form div{
+    display: flex;
+    width: 513px;
+    height: 44px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 36px;
+}
+
+form input {
+    height: 100%;
+    width: 80%;
+    background: transparent;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: center;
+}
+
+form button {
+    height: 117%;
+    width: 20%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
+    padding-left: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+form button:hover {
+    background: #34a853;
+    color: white;
+}
+
+form button:focus, form input:focus {
+    outline: 0;
+}
+
+.mat-radio-container{
+    visibility: hidden;
+}
+
+mat-radio-group {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+mat-radio-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+
+.box-form {
+    width: 50%;
+}
+
+.box-form p {
+    overflow-wrap: break-word;
+    padding: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .box-form {
+        width: 100%;
+    }
+
+    form div {
+        width: 100%; 
+    }
+
+    mat-radio-group { 
+    width: 100%;
+    }
+  }

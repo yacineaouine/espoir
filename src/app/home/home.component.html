@@ -1,0 +1,28 @@
+<main>
+    <h1>
+        <span id="l1">E</span><span id="l2">s</span><span id="l3">p</span><span id="l4">o</span><span id="l5">i</span><span id="l6">r</span>
+      </h1>
+
+    <div class="box-form">
+
+        <div [style.color]="favoriteColor">
+            <p>{{message}}</p>
+        </div>
+        
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+            <div>
+                <input  type="text" formControlName="message" [(ngModel)]="message" placeholder="Votre message d'espoir">
+                <button type="submit"  [disabled]="!profileForm.valid">Espoir</button>
+            </div>
+
+            <mat-radio-group *ngIf="message != ''" aria-label="Choisir une couleur" formControlName="color" [(ngModel)]="favoriteColor">
+                <mat-radio-button  [style.color]="color" [style.backgroundColor]="color" class="example-radio-button" *ngFor="let color of colors" [value]="color">
+                </mat-radio-button>
+            </mat-radio-group>
+
+        </form>
+    </div>
+
+
+</main>

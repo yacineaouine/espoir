@@ -1,0 +1,21 @@
+.message-card {
+    background: #eee;
+    overflow-wrap: break-word;
+    padding: 2%;
+    text-align: center;
+  }
+.list-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list-message div {
+  width: 300px;
+  margin: 1%;
+}
+
+mat-card-title {
+  font-size: xx-small;
+}
